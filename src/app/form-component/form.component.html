@@ -1,16 +1,29 @@
 <h1>hello</h1>
 
-<form>
-  <div class="form-group">
-    <label for="email">Email address:</label>
-    <input type="email" class="form-control" id="email">
+<div class="container">
+  <div class="row">
+    <div class="col-md-12 col-xs-12">
+      <form class="form-inline">
+        <div class="form-group">
+          <label for="email">Login:</label>
+          <input type="email" class="form-control" id="email" formmethod="post" required="required">
+        </div>
+        <div class="form-group">
+          <label for="pwd">Hasło</label>
+          <input type="password" class="form-control" id="pwd" formmethod="post" required="required">
+        </div>
+        <div class="checkbox">
+          <label><input type="checkbox"> Remember me</label>
+        </div>
+        <button type="submit" class="btn btn-default" formmethod="post">Submit</button>
+      </form>
+    </div>
+
   </div>
-  <div class="form-group">
-    <label for="pwd">Password:</label>
-    <input type="password" class="form-control" id="pwd">
-  </div>
-  <div class="checkbox">
-    <label><input type="checkbox"> Remember me</label>
-  </div>
-  <button type="submit" class="btn btn-default">Submit</button>
-</form>
+</div>
+
+
+
+
+
+
